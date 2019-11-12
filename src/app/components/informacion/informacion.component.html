@@ -1,0 +1,9 @@
+<div *ngFor="let Producto of ProductosRecibidos" class="card" style="width: 18rem;">
+    <img [src]="Producto.imageUrl" class="card-img-top" alt="..." />
+    <div class="card-body">
+      <h5 class="card-title">{{Producto.productName}}</h5>
+      <p class="card-text">{{Producto.description}}</p>
+      <a  (click)="MandarProducto(Producto.productId)" class="btn btn-primary">Ver detalles de producto</a>
+    </div>
+  </div>
+  
